@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bot_users",
+  "info": {
+    "singularName": "bot-user",
+    "pluralName": "bot-users",
+    "displayName": "BotUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chatId": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    },
+    "codes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-components.code"
+    }
+  }
+}

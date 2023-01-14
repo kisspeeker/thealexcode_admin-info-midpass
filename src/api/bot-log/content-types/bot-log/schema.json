@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bot_logs",
+  "info": {
+    "singularName": "bot-log",
+    "pluralName": "bot-logs",
+    "displayName": "BotLog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "error",
+        "successStart",
+        "autoUpdateWithChanges",
+        "subscribeEnable",
+        "unsubscribeEnable",
+        "successCodeStatus",
+        "message"
+      ]
+    },
+    "message": {
+      "type": "text"
+    },
+    "user": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  admin:
+    build: .
+    image: thealexcode/admin_info-midpass
+    restart: always
+    ports:
+      - '1339:1339'
+    volumes:
+      - db:/opt/app/.tmp/
+    labels:
+      - docker-volume-backup.stop-during-backup=true
+
+  backup:
+    image: offen/docker-volume-backup:v2
+    restart: always
+    env_file: ./backup.env
+    volumes:
+      - db:/backup/my-app-backup:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ${HOME}/thealexcode_local_backups:/archive
+
+volumes:
+  db:

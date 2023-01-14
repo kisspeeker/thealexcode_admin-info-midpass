@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_code_statuses_internal_statuses",
+  "info": {
+    "displayName": "internalStatus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "percent": {
+      "type": "integer"
+    }
+  }
+}
