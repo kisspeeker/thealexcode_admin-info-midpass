@@ -10,7 +10,10 @@ const { sanitizeObject, sanitizeArray } = require('../../../../utils/sanitize');
 module.exports = createCoreController('api::bot-user.bot-user', () => ({
   async find(ctx) {
     const response = await super.find(ctx);
-    return sanitizeArray(response.data);
+    return {
+      values: sanitizeArray(response.data),
+      meta: response.meta
+    }
   },
 
   async create(ctx) {
