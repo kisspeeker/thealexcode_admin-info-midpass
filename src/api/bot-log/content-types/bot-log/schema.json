@@ -18,6 +18,7 @@
         "errorCronJobRoot",
         "errorCronJobUserCode",
         "successStart",
+        "successCronJob",
         "autoUpdateWithChanges",
         "autoUpdateWithoutChanges",
         "subscribeEnable",
