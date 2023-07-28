@@ -19,6 +19,7 @@
         "errorCronJobUserCode",
         "successStart",
         "autoUpdateWithChanges",
+        "autoUpdateWithoutChanges",
         "subscribeEnable",
         "unsubscribeEnable",
         "successCodeStatus",
