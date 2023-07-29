@@ -14,17 +14,18 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "error",
-        "errorCronJobRoot",
-        "errorCronJobUserCode",
-        "successStart",
-        "successCronJob",
-        "autoUpdateWithChanges",
-        "autoUpdateWithoutChanges",
-        "subscribeEnable",
-        "unsubscribeEnable",
-        "successCodeStatus",
-        "message"
+        "ERROR",
+        "ERROR_CRONJOB_ROOT",
+        "ERROR_CRONJOB_USER_CODE",
+        "SUCCESS_START",
+        "START_CRONJOB",
+        "END_CRONJOB",
+        "AUTOUPDATE_WITHOUT_CHANGES",
+        "AUTOUPDATE_WITH_CHANGES",
+        "SUBSCRIBE_ENABLE",
+        "UNSUBSCRIBE_ENABLE",
+        "SUCCESS_CODE_STATUS",
+        "MESSAGE"
       ]
     },
     "message": {
