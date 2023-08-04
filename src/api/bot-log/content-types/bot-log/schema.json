@@ -28,6 +28,8 @@
         "SUBSCRIBE_ENABLE_ALREADY",
         "UNSUBSCRIBE_ENABLE",
         "SUCCESS_CODE_STATUS",
+        "SHOW_SCHEDULE",
+        "SHOW_FAQ",
         "MESSAGE"
       ]
     },
